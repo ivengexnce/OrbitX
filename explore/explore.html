@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbitX | Space Exploration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <img src="/assets/Otrans8k2.png" alt="OrbitX Logo" class="logo">
+                <div class="search-container">
+                    <input type="text" placeholder="Search for exploration..." />
+                    <span class="search-icon">⌕</span>
+                </div>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger">
+                    <span></span><span></span><span></span>
+                </span>
+            </button>
+
+            <div class="nav-links">
+                <a href="/home/home.html">Home</a>
+                <a href="#" class="active">Explore</a>
+                <a href="#">Missions</a>
+                <a href="#">Technology</a>
+                <a href="/signup/signup.html">Join</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="explore-hero">
+        <div class="explore-content">
+            <h1>Explore the Cosmos with <span class="gradient-text">OrbitX</span></h1>
+            <p>Discover planets, missions, and the future of space technology.</p>
+            <a href="#planets" class="explore-btn">Start Exploring</a>
+        </div>
+    </section>
+
+    <section id="planets" class="planets-section">
+        <h2>Planets of Our Solar System</h2>
+
+        <div class="carousel-container">
+            <div class="planets-track">
+                <div class="planet-card active">
+                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=800" alt="Mercury">
+                    <h3>Mercury</h3>
+                    <p class="planet-desc">The smallest planet, closest to the Sun.</p>
+                    <ul class="planet-facts">
+                        <li>Distance: 57.9M km</li>
+                        <li>Moons: 0</li>
+                    </ul>
+                </div>
+                <div class="planet-card">
+                    <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?auto=format&fit=crop&w=800" alt="Venus">
+                    <h3>Venus</h3>
+                    <p class="planet-desc">Thick, toxic atmosphere and extreme heat.</p>
+                    <ul class="planet-facts">
+                        <li>Distance: 108.2M km</li>
+                        <li>Moons: 0</li>
+                    </ul>
+                </div>
+                <div class="planet-card">
+                    <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=800" alt="Earth">
+                    <h3>Earth</h3>
+                    <p class="planet-desc">Our home planet, the only one with life.</p>
+                    <ul class="planet-facts">
+                        <li>Distance: 149.6M km</li>
+                        <li>Moons: 1</li>
+                    </ul>
+                </div>
+                <div class="planet-card">
+                    <img src="https://images.unsplash.com/photo-1614724723126-a429c3dd2701?auto=format&fit=crop&w=800" alt="Mars">
+                    <h3>Mars</h3>
+                    <p class="planet-desc">The red planet, a cold desert world.</p>
+                    <ul class="planet-facts">
+                        <li>Distance: 227.9M km</li>
+                        <li>Moons: 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 OrbitX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="explore.js"></script>
+</body>
+
+</html>
